@@ -1,0 +1,131 @@
+body{
+	background-image: url(../img/back-ground.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../img/back-ground.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*导航栏*/
+.lmh_body{
+	width: 1280px;
+	height: 720px;
+	margin: 0 auto;
+}
+.lmh_nav{
+	width: 1280px;
+	height: 130px;
+}
+.lmh_nav img{
+	margin-left: 80px;
+	margin-top: 30px;
+	display: inline-block;
+}
+.lmh_nav ul{
+	height: 130px;
+	display: inline-block;
+	position: absolute;
+	margin-left: 140px;
+	margin-top: 65px;
+}
+.lmh_nav ul li{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	list-style: none;
+	display: inline-block;
+}
+.lmh_nav ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	margin-right: 100px;
+	display: block;
+}
+.lmh_nav ul li a:hover{
+	transform:rotate(-10deg);
+	text-decoration:underline;
+}
+/*成果具体*/
+#lmh_contain{
+	top:450px;
+	margin-left: 300px;
+	margin-top: 50px;
+	position: relative;
+}
+
+.lmh_description p{
+	margin-left: 50px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+.lmh_description p a{
+	color: #ffffff;
+	text-decoration: none;
+}
+#context{
+	position: relative;
+	margin-left: 525px;
+	margin-top: -420px;
+	color: #f8fafc;
+	font-family: "微软雅黑";
+}
+#context h1{
+	font-size: 30px;
+}
+#context p{
+	margin-top: 35px;
+	font-size: 18px;
+	line-height: 30px;
+}
+#context button{
+	width: 170px;
+	height: 56px;
+	border-radius: 10px;
+	border: 2px solid #f8fafc;
+	font-size: 30px;
+	color: #f8fafc;
+	font-family: "微软雅黑";
+	background-color: transparent;
+	display: block;
+	cursor: pointer;
+}
+#context img{
+	margin-top: 25px;
+	width: 124px;
+	height: 124px;
+	display: block;
+}
+/*轮播*/
+.bigimg{
+	width: 432px;
+	height: 362px;
+	float: left;
+}
+#lunbo{
+	overflow: hidden;
+	width: 432px;
+	height: 362px;
+	position: absolute;
+}
+#lunboContain{
+	/*width: 1296px;
+	height: 362px;*/
+	position: relative;
+
+}
+.left{
+	width: 50px;
+	height: 50px;
+	top:150px;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}
+.right{
+	width: 50px;
+	height: 50px;
+	left: 382px;
+	top:150px;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}

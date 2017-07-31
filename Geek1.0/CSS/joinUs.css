@@ -1,0 +1,74 @@
+/*h1标题*/
+.joinUs {
+	position: relative;
+	margin-top: 48px;
+	font-size: 36px;
+	color: #ECF0F5;
+	font-weight: normal;
+}
+/*职位及其需求*/
+.position {
+	position: relative;
+	margin: 22px auto 0 auto;
+	width: 990px;
+	height: 300px;
+	border: 1px solid green;
+	color: #ECF0F5;
+}
+.List {
+	width: 280px;
+	margin-top: 36px;
+	float: left;
+}
+.List li {
+	list-style-type: none;
+	width: 168px;
+	height: 46px;
+	border: 2px solid #FBFBFB;
+	border-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 32px;
+}
+.content {
+	/*margin-left: 112px;*/
+	float: left;
+}
+.content ul li {
+	line-height: 32px;
+	font-size: 18px;
+}
+.content ul {
+	margin-left: 20px;
+	margin-top: 16px;
+}
+.content h2 {
+	height: 35px;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+/*立即报名*/
+.resiter {
+	position: fixed;
+	padding-top: 10px;
+	width: 256px;
+	height: 64px;
+	margin: 0px 0px 0px 1000px;
+	background-color: #ffffff;
+	opacity: .3;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 36px;
+}
+.resiter a {
+	color: black;
+}
+.resiter:hover {
+	opacity: .5;
+}

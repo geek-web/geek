@@ -1,0 +1,66 @@
+/*表单验证*/
+* {
+	margin: 0;
+	padding: 0;
+}
+form {
+	width: 650px;
+	height: 350px;
+	margin: 60px auto 0 auto;
+}
+span {
+	color: #F8F6F6;
+	font-size: 18px;
+}
+p[alt="1"] {
+	color: #F8F6F6;
+	font-family: "宋体";
+	visibility: hidden;
+	margin-left: 60px;
+	font-size: 12px;
+	margin-top: 2px;
+}
+p[alt="2"] {
+	color: #F8F6F6;
+	font-family: "宋体";
+	visibility: hidden;
+	margin-left: 95px;
+	font-size: 12px;
+	margin-top: 2px;
+}
+input {
+	width: 180px;
+	height: 25px;
+	border: 1px solid #6A6E76;
+	border-radius: 7px;
+	outline: none;
+	background: none;
+	color: #F8F6F6;
+	font-size: 16px;
+	text-align: center;
+}
+form div {
+	float: left;
+	margin-top: 15px;
+}
+div[alt="short"] {
+	margin-left: 35px;
+}
+form div:nth-child(2n) {
+	margin-left: 140px;
+}
+#date {
+	margin-left: 105px;
+}
+/*提交按钮*/
+div.submit {	
+	width: 100px;
+	height: 30px;
+	margin-left: 1050px;
+	margin-top: 20px;
+	padding-top: 5px;
+	border-radius: 10px;
+	border: 1px solid #6A6E76;
+	text-align: center;
+	cursor: pointer;
+}
