@@ -1,0 +1,170 @@
+*
+{
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+}
+body {
+	background: url(../img/back-ground.png) no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+}
+
+/*导航*/
+/*#mrr_Header
+{
+	width: 1500px;
+	height:225px ;
+}
+#mrr_Header img
+{
+	margin: 30px 50px;
+}
+ul#nav{
+ 	width:100%; 
+	height:60px; 
+	margin:-115px 220px;
+} 
+ul#nav li
+{
+	display:inline; 
+	height:60px
+} 
+ul#nav li a
+{
+	display:inline-block; 
+	padding:0 95px; 
+	height:60px;
+	 line-height:60px;
+ 	color:#FFF; 
+ 	text-decoration:none;
+ 	font-size: 18px;
+ } 
+ul#nav li a:hover
+{
+	text-decoration:underline;
+	}*//*设置鼠标滑过或悬停时变化的背景颜色*/ 
+
+div.nav {
+	width: 1200px;
+	height: 225px;
+}
+.logo {
+	width: 125px;
+	height: 85px;
+	margin: 30px 0px 0px 80px;
+	background: url(../img/logo.png) no-repeat;
+	cursor: pointer;
+	float: left;
+}
+.navUl {
+	margin: 56px 0px 0px 60px;
+	float: left;
+}
+
+.navUl ul li {
+	margin-left: 120px;
+	padding-bottom: 4px;
+	list-style-type: none;
+	display: inline-block;
+}
+li.focus{
+	border-bottom: 2px solid #686D6B;
+}
+.navUl ul li:hover {
+	border-bottom: 2px solid #686D6B;
+	transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	-o-transform:rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
+}
+.navUl ul li a {
+	font-size: 18px;
+	color: #DCDADA;
+}
+
+/*成员*/
+p
+{
+	color:#FFF; 
+ 	font-size: 30px;
+}	
+#mrr_on
+{
+	width: 117px;
+	height: 2px;
+	background-color: #fff;
+	display: block;
+	margin: 108px 200px;
+}
+#mrr_close
+{
+	width: 117px;
+	height: 2px;
+	background-color:#18191E;
+	display:block;
+	margin: -110px 362px;
+}
+#mrr_nowMember
+{
+	width:450px ;
+	height:90px;
+	margin: -5px 195px;
+}
+#mrr_graMember
+{
+	margin:  -90px 360px;
+}
+#mrr_message
+{
+	width:980px ;
+	height:270px;
+	margin:180px 160px;
+}
+.mrr_Information
+{
+	width:3920px ;
+	height:270px;
+	position: absolute; 
+	z-index: 1;
+
+}
+.mrr_member1
+{
+	width:200px;
+	height: 270px;
+	border:1px solid white;
+	float: left;
+}
+
+#mrr_perPs img
+{
+	height: 140px;
+	width: 140px;
+	margin: 20px 30px;
+	border-radius: 50%;
+	border:1px solid white;
+}
+#mrr_preMes
+{
+	text-align: center;
+}
+.arrow { 
+      cursor: pointer;
+      line-height: 39px;
+      text-align: center; 
+      font-size: 75pt; 
+      font-weight: bold; 
+      width: 40px; height: 40px; 
+      position: absolute; z-index: 2;
+      top: 450px;
+      color:#707070;
+    
+    }
+ .arrow:hover { color: RGBA(0,0,0,.7);}
+#container:hover .arrow { display: block;}
+#prev { left: 65px;}
+#next { right: 180px;}
+    

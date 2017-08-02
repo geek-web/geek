@@ -6,33 +6,34 @@
 body {
 	background: url(../img/back-ground.png) no-repeat;
 	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
 }
+
 a {
 	text-decoration: none;
 }
 /*导航*/
 div.nav {
-	width: 100%;
+	width: 1200px;
 	height: 128px;
-	/*background-color: red;*/
-	/*border: 1px solid red;*/
 }
 .logo {
 	width: 125px;
 	height: 85px;
 	margin: 30px 0px 0px 80px;
 	background: url(../img/logo.png) no-repeat;
-/*	border: 1px solid green;*/
 	cursor: pointer;
 	float: left;
 }
 .navUl {
-	margin: 56px 0px 0px 90px;
+	margin: 56px 0px 0px 60px;
 	float: left;
 }
 
 .navUl ul li {
-	margin-left: 100px;
+	margin-left: 120px;
 	padding-bottom: 4px;
 	list-style-type: none;
 	display: inline-block;
@@ -43,6 +44,9 @@ div.nav {
 .navUl ul li:hover {
 	border-bottom: 2px solid #686D6B;
 	transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	-o-transform:rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
 }
 .navUl ul li a {
 	font-size: 18px;

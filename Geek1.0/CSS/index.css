@@ -6,13 +6,16 @@
 body {
 	background: url(../img/back-ground.png) no-repeat;
 	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
 }
 a {
 	text-decoration: none;
 }
 /*导航*/
 div.nav {
-	width: 100%;
+	width: 1200px;
 	height: 128px;
 }
 .logo {
@@ -24,12 +27,12 @@ div.nav {
 	float: left;
 }
 .navUl {
-	margin: 56px 0px 0px 90px;
+	margin: 56px 0px 0px 60px;
 	float: left;
 }
 
 .navUl ul li {
-	margin-left: 100px;
+	margin-left: 120px;
 	padding-bottom: 4px;
 	list-style-type: none;
 	display: inline-block;
