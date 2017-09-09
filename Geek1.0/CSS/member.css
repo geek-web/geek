@@ -139,13 +139,14 @@ div.nav {
       font-size: 75pt; 
       font-weight: bold; 
       width: 40px; height: 40px; 
-      position: absolute; z-index: 2;
+       position:absolute;
+      z-index: 2;
       top: 450px;
       color:#707070;
     }
  .arrow:hover { color: RGBA(0,0,0,.7);}
 
-#container:hover .arrow { display: block;}
+
 
 #prev {
 	display: block;
