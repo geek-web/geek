@@ -13,6 +13,7 @@ window.onload = function(){
         if (xhr.readyState==4) {
             if (xhr.status>=200&&xhr.status<300||xhr.status==304) {
                 var json=JSON.parse(xhr.responseText);
+                console.log(json);
                 //获取项目的个数，将他们写入div中
                 var length = json.achievement.length;
                 var lmh_contain = document.getElementById("lmh_contain");
