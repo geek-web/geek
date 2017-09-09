@@ -1,8 +1,7 @@
-*
-{
-	margin:0;
+﻿* {
+	margin: 0;
 	padding: 0;
-	text-decoration: none;
+	font-family: "微软雅黑";
 }
 body {
 	background: url(../img/back-ground.png) no-repeat;
@@ -12,10 +11,50 @@ body {
 	-webkit-background-size: cover;
 }
 
-/*导航*/
+a {
+	text-decoration: none;
+}
+div.nav {
+	width: 1200px;
+	height: 128px;
+}
+.logo {
+	width: 125px;
+	height: 85px;
+	margin: 30px 0px 0px 80px;
+	background: url(../img/logo.png) no-repeat;
+	cursor: pointer;
+	float: left;
+}
+.navUl {
+	margin: 56px 0px 0px 60px;
+	float: left;
+}
+
+.navUl ul li {
+	margin-left: 120px;
+	padding-bottom: 4px;
+	list-style-type: none;
+	display: inline-block;
+}
+.team {
+	border-bottom: 2px solid #686D6B;
+}
+.navUl ul li:hover {
+	border-bottom: 2px solid #686D6B;
+	transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	-o-transform:rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
+}
+.navUl ul li a {
+	font-size: 18px;
+	color: #DCDADA;
+}
+
 /*#mrr_Header
 {
-	width: 1500px;
+	width: 100%;
 	height:225px ;
 }
 #mrr_Header img
@@ -44,99 +83,70 @@ ul#nav li a
  } 
 ul#nav li a:hover
 {
-	text-decoration:underline;
-	}*//*设置鼠标滑过或悬停时变化的背景颜色*/ 
+	/*background:#0095BB;*/
+	
+	/*设置鼠标滑过或悬停时变化的背景颜色*/ 
 
-div.nav {
-	width: 1200px;
-	height: 225px;
-}
-.logo {
-	width: 125px;
-	height: 85px;
-	margin: 30px 0px 0px 80px;
-	background: url(../img/logo.png) no-repeat;
-	cursor: pointer;
-	float: left;
-}
-.navUl {
-	margin: 56px 0px 0px 60px;
-	float: left;
-}
 
-.navUl ul li {
-	margin-left: 120px;
-	padding-bottom: 4px;
-	list-style-type: none;
-	display: inline-block;
-}
-li.focus{
-	border-bottom: 2px solid #686D6B;
-}
-.navUl ul li:hover {
-	border-bottom: 2px solid #686D6B;
-	transform:rotate(-10deg);
-	-moz-transform:rotate(-10deg);
-	-o-transform:rotate(-10deg);
-	-webkit-transform:rotate(-10deg);
-}
-.navUl ul li a {
-	font-size: 18px;
-	color: #DCDADA;
-}
 
-/*成员*/
-p
+
+#mrr_Member{
+
+	margin-top: 100px;}
+#mrr_Member div
 {
+	display: inline-block;
 	color:#FFF; 
  	font-size: 30px;
-}	
-#mrr_on
-{
-	width: 117px;
-	height: 2px;
-	background-color: #fff;
-	display: block;
-	margin: 108px 200px;
-}
-#mrr_close
-{
-	width: 117px;
-	height: 2px;
-	background-color:#18191E;
-	display:block;
-	margin: -110px 362px;
 }
 #mrr_nowMember
 {
-	width:450px ;
-	height:90px;
-	margin: -5px 195px;
+	
+	margin: 10px 0px 0px 380px;
+	width: 120px;
+	height: 70px;
+	border-bottom:2px solid white;
 }
 #mrr_graMember
 {
-	margin:  -90px 360px;
+	margin-left:  50px;
+	width: 120px;
+	height: 70px;
+	
 }
 #mrr_message
 {
 	width:980px ;
 	height:270px;
-	margin:180px 160px;
-}
-.mrr_Information
-{
-	width:3920px ;
-	height:270px;
-	position: absolute; 
-	z-index: 1;
+	margin-top:10px ;
+	margin-left: 280px;
+	 
+	 position: absolute;
 
+      overflow: hidden; 
+}
+#mrr_Information
+{
+	width:3920px;
+	height:270px;
+	 position: relative;
+	 
+	z-index: 1;
+	 
+	 
+}
+#mrr_Member{
+	width:100%;
 }
 .mrr_member1
 {
-	width:200px;
-	height: 270px;
-	border:1px solid white;
-	float: left;
+	 width:202px;
+      height: 270px;
+      
+      margin: 0px 43px 0px 0px;
+      float: left;
+      background-color: #414242;opacity: 0.8;
+      z-index: 1;
 }
 
 #mrr_perPs img
@@ -146,10 +156,13 @@ p
 	margin: 20px 30px;
 	border-radius: 50%;
 	border:1px solid white;
+	 z-index:2;
 }
 #mrr_preMes
 {
 	text-align: center;
+	 z-index: 2;
+     color: white;
 }
 .arrow { 
       cursor: pointer;
@@ -161,10 +174,9 @@ p
       position: absolute; z-index: 2;
       top: 450px;
       color:#707070;
-    
     }
  .arrow:hover { color: RGBA(0,0,0,.7);}
 #container:hover .arrow { display: block;}
-#prev { left: 65px;}
-#next { right: 180px;}
+#prev {left: 180px;}
+#next { right: 210px;}
     

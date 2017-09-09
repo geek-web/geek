@@ -1,79 +1,11 @@
 window.onload=function () {
 	var mrr_nowMember=document.getElementById('mrr_nowMember');
 	var mrr_graMember=document.getElementById('mrr_graMember');
-	var mrr_on=document.getElementById('mrr_on');
-	var mrr_close=document.getElementById('mrr_close');
-	var container=document.getElementById("mrr_message")
-	var list=document.getElementsByTagName("mrr_Information")
+	var list=document.getElementById("mrr_Information");
 	var prev = document.getElementById('prev');
     var next = document.getElementById('next');
     var index = 1;
-    var len = 5;
-    var animated = false;
-    var interval = 3000;
-    var timer;
-    function animate (offset) {
-         if (offset == 0) {
-             return;
-     }
-      animated = true;
-     var time = 400;
-     var inteval = 10;
-     var speed = offset/(time/inteval);
-     var left = parseInt(list.style.left) + offset;
-
-     var go = function (){
-     if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
-           list.style.left = parseInt(list.style.left) + speed + 'px';
-                       setTimeout(go, inteval);
-                    }
-                    else {
-                        list.style.left = left + 'px';
-                        if(left>-200){
-                            list.style.left = -980 * len + 'px';
-                        }
-                        if(left<(-980 * len)) {
-                            list.style.left = '-980px';
-                        }
-                        animated = false;
-                    }
-                }
-                go();
-            }
-
-            next.onclick = function () {
-                if (animated) {
-                    return;
-                }
-                if (index == 4) {
-                    index = 1;
-                }
-                else {
-                    index += 1;
-                }
-                animate(-980);
-            }
-            prev.onclick = function () {
-                if (animated) {
-                    return;
-                }
-                if (index == 1) {
-                    index = 4;
-                }
-                else {
-                    index -= 1;
-                }
-                animate(980);
-            }
-   
-	mrr_graMember.onclick=function(){
-		mrr_on.style.backgroundColor="#18191E";
-		mrr_close.style.backgroundColor="white";
-	}
-	mrr_nowMember.onclick=function(){
-		mrr_on.style.backgroundColor="white";
-		mrr_close.style.backgroundColor="#18191E";
-	}
+    
 var xhr=new XMLHttpRequest();
 xhr.open('get','http://rapapi.org/mockjsdata/23472/geek',true);
 xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charest=utf-8");
@@ -85,19 +17,52 @@ xhr.onreadystatechange=function(){
            var json=JSON.parse(xhr.responseText);
           var str='';
           for(var i=0;i<16;i++){
-             str += '<div id="mrr_member1">'+'<div id="mrr_perPs">'+
-                   '<img src="' + json.data.img +'">' +
+             str += '<div class="mrr_member1">'+'<div id="mrr_perPs">'+
+                   '<img src="../img/' + json.data[i].img +'">' +
              		  '</div>'+
-             '<p id="mrr_preMes">'+json.data.name+'</p>'
+             '<p id="mrr_preMes">'+json.data[i].name+'</p>'
                       +'</div>'
              		 +'</div>'; 
           } 
-          document.getElementsByTagName('mrr_Information').innerHTML = str;
+          document.getElementById('mrr_Information').innerHTML = str;
       }
         else {alert('请求失败'+xhr.status); }     
     }                    
 }
-
+function change(){
+    	if(index>=3){
+    				mrr_graMember.style.borderBottom="2px solid white";
+    				mrr_nowMember.style.borderBottom="none";
+    			}
+    			else{
+    				mrr_graMember.style.borderBottom="none";
+    				mrr_nowMember.style.borderBottom="2px solid white";
+    			}
+    }
+   mrr_nowMember.onclick=function(){
+    list.style.left=0+'px';	
+	mrr_nowMember.style.borderBottom="2px solid white";
+	mrr_graMember.style.borderBottom="none";
+    }
+   mrr_graMember.onclick=function(){
+    list.style.left=-1960+'px';	
+    mrr_nowMember.style.borderBottom="none";
+	mrr_graMember.style.borderBottom="2px solid  white";
+    }
+    next.onclick=function(){    	
+    	if (parseInt(list.style.left)>-2940) {
+    		list.style.left=parseInt(list.style.left)-980+'px';
+    	    index=index+1;
+    		change();
+ 			
+    	}
+    }
+    prev.onclick=function(){
+    	if (parseInt(list.style.left)<0) {
+    	list.style.left=parseInt(list.style.left)+980+'px';
+    	index=index-1;
+    	change();}
+    }
 }
 
 	
