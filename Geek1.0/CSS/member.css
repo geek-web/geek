@@ -52,47 +52,10 @@ div.nav {
 	color: #DCDADA;
 }
 
-/*#mrr_Header
-{
-	width: 100%;
-	height:225px ;
-}
-#mrr_Header img
-{
-	margin: 30px 50px;
-}
-ul#nav{
- 	width:100%; 
-	height:60px; 
-	margin:-115px 220px;
-} 
-ul#nav li
-{
-	display:inline; 
-	height:60px
-} 
-ul#nav li a
-{
-	display:inline-block; 
-	padding:0 95px; 
-	height:60px;
-	 line-height:60px;
- 	color:#FFF; 
- 	text-decoration:none;
- 	font-size: 18px;
- } 
-ul#nav li a:hover
-{
-	/*background:#0095BB;*/
-	
-	/*设置鼠标滑过或悬停时变化的背景颜色*/ 
-
-
-
 
 #mrr_Member{
-
-	margin-top: 100px;}
+	margin-top: 20px;
+}
 #mrr_Member div
 {
 	display: inline-block;
@@ -107,34 +70,37 @@ ul#nav li a:hover
 	height: 70px;
 	border-bottom:2px solid white;
 }
+
 #mrr_graMember
 {
 	margin-left:  50px;
 	width: 120px;
 	height: 70px;
-	
 }
+
 #mrr_message
 {
-	width:980px ;
-	height:270px;
-	margin-top:10px ;
-	margin-left: 280px;
-	 
-	 position: absolute;
-
-      overflow: hidden; 
+	width:1100px ;
+	height:270px; 
+	/*border: 1px solid green;*/
+	margin: 70px auto;
 }
+
+.parent {
+	width: 980px;
+	height: 270px;
+	overflow: hidden;
+	/*border: 1px solid red;*/
+	position: relative;
+	margin: 0px auto;
+}
+
 #mrr_Information
 {
 	width:3920px;
 	height:270px;
-	 position: relative;
-	 
-	z-index: 1;
-	 
-	 
 }
+
 #mrr_Member{
 	width:100%;
 }
@@ -164,6 +130,8 @@ ul#nav li a:hover
 	 z-index: 2;
      color: white;
 }
+
+
 .arrow { 
       cursor: pointer;
       line-height: 39px;
@@ -176,7 +144,18 @@ ul#nav li a:hover
       color:#707070;
     }
  .arrow:hover { color: RGBA(0,0,0,.7);}
+
 #container:hover .arrow { display: block;}
-#prev {left: 180px;}
-#next { right: 210px;}
-    
+
+#prev {
+	display: block;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+
+#next {
+
+	display: block;
+	margin-left: 1000px;
+	margin-top: -30px;
+}
