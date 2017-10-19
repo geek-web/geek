@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>后台管理页面</title>
+  <meta charset="utf-8">
+ <link href="../CSS/bootstrap.min.css" rel="stylesheet"><!-- 应用bootstrap的css -->
+ <link rel="stylesheet" type="text/css" href="../CSS/head.css">
+ <link rel="stylesheet" type="text/css" href="../CSS/guide.css"> 
+  <link rel="stylesheet" type="text/css" href="../CSS/manage.css">
+  <script type="text/javascript" src="../Script/manage.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="logo" id="logo"></div>
+    <div class="font"></div>
+    <p class="system">后台管理系统</p>
+  </div>
+
+  <!-- 右侧导航 -->
+  <div class="nav">
+    <div class="mark" id="mark"></div>
+    <ul class="list" id="list">
+      <li><a href="admin_infor.html">招新信息</a></li>
+      <li><a href="achieve.html">成果展示编辑</a></li>
+      <li><a href="manage.html">团队介绍</a></li>
+      <li><a href="admin_join.html">加入我们</a></li>
+    </ul>
+  </div >
+<div id="mrr_contain">
+<div style="background-color:#F2F2F2;height:60px;width:96%">
+  <button type="button" class="btn btn-warning" id="now"><span style="font-size:21pt">全体成员</span></button>
+  <span>&nbsp;&nbsp;</span>
+  <button type="button" class="btn btn-success" id="join">
+  <div class="glyphicon glyphicon-plus-sign"></div>添加
+  </button>
+</div>
+  <br>
+<table id="tbody" class="table-hover table" style="width:96%">
+  <thead>
+      <tr class="active">
+          <th>照片</th>
+          <th>姓名</th>
+          <th>学号</th>
+          <th>简介</th>
+          <th>状态</th>
+          <th>操作</th>
+      </tr>
+  </thead>
+  <tbody id="tb"></tbody>
+</table>
+<div id="login" style="display:none">
+  <div id="header">
+  注册个人信息
+  <div id="close">×</div>
+  </div>
+    
+  <form class="form-horizontal" role="form" method="post" id="formid" name="myform"  
+  action="http://localhost/mem_save" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">姓名</label>
+    <div class="col-lg-8">
+      <input type="text" class="form-control" id="lastname" name="name" placeholder="请输入名字">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="firstname" class="col-sm-2 control-label">学号</label>
+    <div class="col-lg-8">
+      <input type="text" class="form-control" id="firstname"  name="num" placeholder="请输入学号">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="firstname" class="col-sm-2 control-label">简介</label>
+    <div class="col-lg-8">
+      <input type="text" class="form-control" id="firstname" name="ins" placeholder="请输入简介">
+    </div>
+  </div> 
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">状态</label>
+    <div class="col-lg-8">
+      <label>
+      <input id="nowm" name="con" type="radio" checked value="现有成员" />&nbsp;现有成员&nbsp; &nbsp;</label> 
+    <label>
+    <input id="gram" name="con" type="radio" value="毕业成员" />&nbsp; 毕业成员 </label> 
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastname" class="col-sm-2 control-label">照片</label>
+    <input type="file" name="upload" id="inputfile" class=" col-sm-10" >
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10" >
+      <button type="submit" class="btn btn-success" id="sure" style="display:block">确定</button> 
+       <button type="submit" class="btn btn-success" id="change" style="display:none">修改</button>
+    </div>
+  </div>
+</form>
+</div>
+<iframe id="rfFrame" name="rfFrame" src="about:blank" style="display:none;"></iframe> 
+</div>
+<div id="mask" style="display:none"></div>
+
+</body>
+</html>

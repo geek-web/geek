@@ -1,0 +1,93 @@
+body {
+	height: 100%;
+}
+.box {
+	position: relative;
+	left: 150px;
+	top: -210px;
+	margin:0px;
+	width: 1306px;
+}
+#addProject {
+	border: 1px solid grey;
+	width: 500px;
+	padding-bottom: 10px;
+	position: absolute;
+	left: 30%;
+	top: 25%;
+	background-color: #F6F6F6;
+	border-radius: 10px;
+	z-index: 10000;
+	display: none;
+}
+.headProject {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 20px;
+	width: 400px;
+	border-bottom: 2px solid grey;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.headProject span {
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	font-size: 25px;
+}
+.projectContain {
+	width: 500px;
+	position: relative;
+	margin-top: 10px;
+}
+#save {
+	margin: 0 auto;
+	display: none;
+}
+
+#mask {
+	opacity: 0.5;
+	z-index: 1000;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+#imgSelect img , #imgSelect2 img{
+	position: relative;
+	margin-left: 15px;
+}
+#add {
+	position: relative;
+}
+#fengye {
+	position: relative;
+	left: 15px;
+	bottom: 0px;
+	text-align: center;
+}
+#fengye a {
+	display: inline-block;
+	margin-left: 10px;
+	font-family: "微软雅黑";
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	border: 1px solid #DEDEDE;
+	background-color: #FFFFFF;
+	width: 25px;
+	height: 25px;
+}
+#fengye .first, #fengye .last {
+	width: 60px;
+	height: 25px;
+}
+#fengye .pre, #fengye .next {
+	width: 75px;
+	height: 25px;
+}
+
+
+#changeButton {
+	display: none;
+	margin: 0 auto;
+}

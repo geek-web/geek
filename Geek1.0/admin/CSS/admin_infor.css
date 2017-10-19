@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: '微软雅黑';
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/*表单*/
+table {
+	border-right: 1px solid black; 
+	border-bottom:1px solid black;
+	margin: -200px 0 0 150px;
+}
+.caption {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+th {
+	border-left:1px solid black; 
+	border-top:1px solid black;
+	height: 35px;
+	padding: 10px 15px 10px 15px;
+}
+td {
+	border-left: 1px solid black; 
+	border-top:1px solid black;
+	height: 40px;
+	text-align: center;
+	padding: 0 10px 0 10px;
+}
+.delete {
+	color: blue;
+}
+.delete:hover {
+	color: red;
+	cursor: pointer;
+}

@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+body {
+	background:url(../img/timg2.png) no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+
+h1 {
+	color: #AABFD0;
+	margin-top: 150px;
+}
+div.open {
+	width: 400px;
+	height: 230px;
+	/*border: 1px solid;*/
+	border-radius: 10px;
+	margin: 20px auto;
+}
+
+.open label {
+	font-size: 18px;
+	margin: 40px 40px 0 40px;
+	display: block;
+	color: #AABFD0;
+}
+.open input {
+	font-size: 18px;
+	background:none;
+	color: #AABFD0;
+	border-radius: 6px;
+	outline: none;
+	border-color: #215580;
+	text-align: center;
+}
+
+
+div.confirm{
+	background:url(../img/button.png) repeat-x;
+	color: white;
+	margin:40px 100px;
+	width: 200px;
+	text-align: center;
+	height: 30px;
+	border-radius: 10px;
+	padding-top: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+	opacity: 0.7;
+}
+
+div.confirm:hover {
+	opacity: 1;
+}

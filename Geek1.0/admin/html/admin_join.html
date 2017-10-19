@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>加入我们</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/admin_join.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/head.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/guide.css">
+	<!-- <script type="text/javascript" src='../Script/admin_guide.js'></script> -->
+	<script type="text/javascript" src='../Script/admin_joinUs1.js'></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="logo" id="logo"></div>
+		<div class="font"></div>
+		<p class="system">后台管理系统</p>
+	</div>
+
+	<!-- 右侧导航 -->
+	<div class="nav">
+		<div class="mark" id="mark"></div>
+		<ul class="nav_list" id="nav_list">
+			<li><a href="admin_infor.html">招新信息</a></li>
+			<li><a href="achieve.html">成果展示编辑</a></li>
+			<li><a href="manage.html">团队介绍</a></li>
+			<li><a href="admin_join.html">加入我们</a></li>
+		</ul>
+	</div>
+	<!-- 编辑内容 -->
+	<div class="content">
+		<div class="tittle">
+			<label>标题：<input class="_tittle" id="_tittle" type="text"></label>
+			<button id="tittle_confirm">保存</button>
+		</div>
+
+		<!-- 职位分类列表 -->
+		<div class="list" id="pos_list">
+			<ul id="get_list">
+				<!-- <li>技术研发</li>
+				<li>运营</li>
+				<li>产品设计</li>
+				<li class="add" id="add">+</li> -->
+			</ul>
+		</div>
+		
+		<!-- 输入框 -->
+		<div class="edit" id="edit">
+		</div>
+		<!-- 弹出编辑框 -->
+
+		<div class="open" id="open">
+			<label>职位分类：<input type="text" id="poskind"></label>
+			<div class="con-clo">
+				<div class="confirm" id="confirm">确认</div>
+				<div class="close" id="close">取消</div>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+</html>

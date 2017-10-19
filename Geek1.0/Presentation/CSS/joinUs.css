@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+body {
+	background: url(../img/back-ground.png) no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+}
+
+a {
+	text-decoration: none;
+}
+/*导航*/
+div.nav {
+	width: 1200px;
+	height: 128px;
+}
+.logo {
+	width: 125px;
+	height: 85px;
+	margin: 30px 0px 0px 80px;
+	background: url(../img/logo.png) no-repeat;
+	cursor: pointer;
+	float: left;
+}
+.navUl {
+	margin: 56px 0px 0px 60px;
+	float: left;
+}
+
+.navUl ul li {
+	margin-left: 120px;
+	padding-bottom: 4px;
+	list-style-type: none;
+	display: inline-block;
+}
+.navUl ul li:last-child {
+	border-bottom: 2px solid #686D6B;
+}
+.navUl ul li:hover {
+	border-bottom: 2px solid #686D6B;
+	transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	-o-transform:rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
+}
+.navUl ul li a {
+	font-size: 18px;
+	color: #DCDADA;
+}
+.joinUs {
+	position: relative;
+	margin-top: 48px;
+	font-size: 36px;
+	color: #ECF0F5;
+	font-weight: normal;
+}
+/*职位及其需求*/
+.position {
+	position: relative;
+	margin: 22px auto 0 auto;
+	width: 990px;
+	height: 300px;
+	/*border: 1px solid green;*/
+	color: #ECF0F5;
+}
+.List {
+	width: 280px;
+	margin-top: 36px;
+	float: left;
+}
+.List li {
+	list-style-type: none;
+	width: 168px;
+	height: 46px;
+	border: 2px solid #FBFBFB;
+	border-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 32px;
+}
+.content {
+	/*margin-left: 112px;*/
+	float: left;
+}
+.content ul li {
+	line-height: 32px;
+	font-size: 18px;
+}
+.content ul {
+	margin-left: 20px;
+	margin-top: 16px;
+}
+.content h2 {
+	height: 35px;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+/*立即报名*/
+.resiter {
+	position: fixed;
+	padding-top: 10px;
+	width: 256px;
+	height: 64px;
+	margin: 0px 0px 0px 1000px;
+	background-color: #ffffff;
+	opacity: .3;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 36px;
+}
+.resiter a {
+	color: black;
+}
+.resiter:hover {
+	opacity: .5;
+}

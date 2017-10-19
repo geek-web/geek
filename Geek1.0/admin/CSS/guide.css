@@ -1,0 +1,28 @@
+.nav {
+	position: relative;
+	/*border:1px solid red;*/
+	width: 150px;
+}
+.nav ul li {
+	background-color: #393D49;
+	width: 150px;
+	height: 40px;
+	list-style-type: none;
+	font-size: 20px;
+	text-align: center;
+	color: #C2C2C2;
+	cursor: pointer;
+	padding-top: 10px;
+}
+.nav ul li:hover {
+	background-color: #4E5366;
+	color: white;
+}
+.mark {
+	position: absolute;
+	width: 5px;
+	height: 50px;
+	background-color: #5FB878;
+	/*display: block;*/
+	display: none;
+}

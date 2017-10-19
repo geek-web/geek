@@ -1,0 +1,31 @@
+
+.header {
+	width: 100%;
+	height: 140px;
+	background:url(../img/bg.png);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+}
+.logo {
+	background: url(../img/logo.png) no-repeat;
+	width: 120px;
+	height: 81px;
+	display: inline-block;
+	margin:30px 200px 0px 80px;
+}
+
+.font {
+	background: url(../img/font.png) no-repeat;
+	width: 476px;
+	height: 83px;
+	display: inline-block;
+}
+p.system {
+	color: #F9F9F9;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 24px;
+	margin:0 0 0 50px;
+}

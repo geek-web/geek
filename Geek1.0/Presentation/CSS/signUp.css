@@ -1,0 +1,60 @@
+/*表单验证*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+/*form表单*/
+form {
+	width: 650px;
+	height: 350px;
+	margin: 60px auto 0 auto;
+}
+span {
+	color: #F8F6F6;
+	font-size: 18px;
+}
+
+p {
+	color: #F8F6F6;
+	visibility: hidden;
+	margin-left: 95px;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+input {
+	width: 180px;
+	height: 25px;
+	border: 1px solid #6A6E76;
+	border-radius: 7px;
+	outline: none;
+	background: none;
+	color: #F8F6F6;
+	font-size: 16px;
+	text-align: center;
+}
+form div {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+form div:nth-child(2n) {
+	margin-left: 140px;
+}
+#grade {
+	margin-left: 118px;
+}
+/*提交按钮*/
+#submit {	
+	width: 100px;
+	height: 30px;
+	margin-left: 1050px;
+	margin-top: 20px;
+	padding-top: 5px;
+	border-radius: 10px;
+	border: 1px solid #6A6E76;
+	text-align: center;
+	cursor: pointer;
+}

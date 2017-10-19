@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>成果的后台管理系统</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/achievement_houtai.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/guide.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/head.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+</head>
+<body>
+<div class="header">
+		<div class="logo" id="logo"></div>
+		<div class="font"></div>
+		<p class="system">后台管理系统</p>
+	</div>
+
+	<!-- 右侧导航 -->
+	<div class="nav">
+		<div class="mark" id="mark"></div>
+		<ul class="list" id="list">
+			<li><a href="admin_infor.html">招新信息</a></li>
+			<li><a href="achieve.html">成果展示编辑</a></li>
+			<li><a href="manage.html">团队介绍</a></li>
+			<li><a href="admin_join.html">加入我们</a></li>
+		</ul>
+	</div>
+
+<div class="box">
+<!-- 表格的头部内容 -->
+<!-- 在页面上显示的已保存项目 -->
+<div class="show">
+	<table class="table table-striped table-bordered table-hover" id="myTable">
+		<thead>
+			<tr>
+				<th>编号</th>
+				<th>标题</th>
+				<th>介绍</th>
+				<th>封面</th>
+				<th>功能</th>
+			</tr>
+		</thead>
+
+		<tbody id="myTbody">
+			<!-- <tr>
+				<td>1</td>
+				<td>标题1</td>
+				<td>这是介绍内容</td>
+				<td><img src=""></td>
+				<td>
+				<button class="btn btn-default" id="change">修改</button>
+				<button class="btn btn-default" name="delete">删除</button>
+				</td>
+			</tr> -->
+		</tbody>
+	</table>
+</div>
+<!-- 添加项目的表单 -->
+<div id="addProject">
+	<div class="headProject">添加项目<span id="closeForm">x</span></div>
+	
+	<div class="projectContain">
+		<form class="form-horizontal"  role="form" id="myForm" enctype="multipart/form-data"  name="formFile">
+	
+			<div class="form-group">
+				<label for="inputHead" class="col-sm-2 control-label">标题</label>
+				<div class="col-sm-10">
+					<input type="tetx" name="name" id="inputHead" placeholder="请输入项目标题" class="col-sm-10">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="txta">介绍</label>
+				<div class="col-sm-9">
+					<textarea rows="6" class="form-control" id="txta" name="ins"></textarea>
+				</div>
+			</div>
+		</form>
+	<div class="form-group">
+		<label for="inputImg1" class="col-sm-2 control-label">轮播</label>
+		<div class="col-sm-10">
+			<form enctype="multipart/form-data" method="post" id="formFile" name="upload" action="http://localhost/pho_save">
+				<input type="file" name="upload" id="inputImg2" class="col-sm-10" >
+				<button id="button" type="submit">保存图片</button>
+			</form>
+			<iframe id="rfFrame" name="rfFrame" src="about:blank" style="display:none;"></iframe> 
+		</div>
+		<div id="imgSelect2"></div>
+	</div>
+	<button class="btn btn-primary btn-lg" id="save" type="button">保存</button>
+	<button class="btn btn-primary btn-lg" id="changeButton" type="button">修改</button>
+	</div>
+	
+</div>
+
+<div id="fengye"></div>
+<button class="btn btn-primary" id="add">新增项目</button>
+</div>
+<script type="text/javascript" src = "../Script/achievement_houtai.js"></script>
+</body>
+</html>

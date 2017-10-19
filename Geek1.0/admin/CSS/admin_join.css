@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: '微软雅黑';
+}
+/*body {
+	background: url(../Geek1.0/img/back-ground.png) no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}*/
+a {
+	text-decoration: none;
+	color: white;
+}
+.header {
+	width: 100%;
+	height: 120px;
+	background-color: purple;
+}
+
+/*编辑内容*/
+.content {
+	width: 720px;
+	/*border: 1px solid black;*/
+	position: relative;
+	margin: -200px auto;
+}
+.tittle {
+	margin-left: 50px;
+	margin-bottom: 20px;
+}	
+.tittle label {
+	font-size: 26px;
+}
+._tittle {
+	width: 420px;
+	margin-left: 10px;
+	font-size: 18px;
+}
+.name {
+	width: 570px;
+	height: 25px;
+}
+.remark {
+	width: 570px;
+	height: 170px;
+	display: block;
+	margin-top: 18px;
+}
+
+button {
+	color: white;
+	background-color: #000034;
+	cursor: pointer;
+	width: 50px;
+}
+
+/*职位列表*/
+div.list {
+	float: left;
+}
+
+.list ul li {
+	list-style-type: none;
+	width: 122px;
+	height: 45px;
+	background-color: grey;
+	text-align: center;
+	margin-top: 2px;
+	font-size: 18px;
+	cursor: pointer;
+	padding-top: 15px;
+	border-radius: 5px;
+}
+.list ul li:hover {
+	opacity: 0.8;
+}
+
+/*输入编辑框*/
+div.edit {
+	float: left;
+	margin-left: 16px;
+	margin-top: 2px;
+}
+/*.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	zoom: 1;
+}*/
+
+
+
+.delete:hover {
+	opacity: 0.8;
+}
+
+/*保存按钮*/
+.conserve {
+	position: absolute;
+	right: 0;
+	top: 400px;
+	z-index: 200;
+	width: 80px;
+	height: 35px;
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 5px;
+	cursor: pointer;
+}
+.conserve:hover {
+	opacity: 0.8;
+}
+
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+/*弹出框编辑框*/
+div.open {
+	position: absolute;
+	width: 400px;
+	height: 170px;
+	border: 1px solid blue;
+	top: 70px;
+	left: 50%;
+	margin-left: -200px;
+	z-index: 500;
+	background-color: white;
+	border-radius: 10px;
+	visibility: hidden;
+}
+
+.open label {
+	font-size: 18px;
+	margin: 40px 40px 0 40px;
+	display: block;
+}
+.open input {
+	font-size: 18px;
+}
+
+.con-clo {
+	position:relative;
+	left: 50%;
+	margin-left: -130px;
+}
+.con-clo div{
+	background-color: blue;
+	color: white;
+	margin:30px;
+	width: 70px;
+	text-align: center;
+	height: 30px;
+	border-radius: 10px;
+	padding-top: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.con-clo div:hover {
+	opacity: 0.5;
+}
